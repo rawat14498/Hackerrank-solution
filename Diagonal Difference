@@ -14,9 +14,9 @@ import sys
 #
 
 def diagonalDifference(arr):
-    lft_dgnlSum=sum([arr[i][i] for i in range(3)])
+    lft_dgnlSum=sum([arr[i][i] for i in range(len(arr))])
     revarr=arr[::-1]
-    ryt_dgnlSum=sum([revarr[i][i] for i in range(3)])
+    ryt_dgnlSum=sum([revarr[i][i] for i in range(len(arr))])
     Dgnldiff=int(lft_dgnlSum) - int(ryt_dgnlSum)
     if Dgnldiff>=0:
         return Dgnldiff
